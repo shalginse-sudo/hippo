@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <windows.h>
 
 class Counter
@@ -40,7 +40,7 @@ void cycle (Counter ab)
     char op;
     do
     {
-        std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
+        std::cout << "Р’РІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ ('+', '-', '=' РёР»Рё 'x'): ";
         std::cin >> op;
         if (op == '+')
         {
@@ -57,6 +57,7 @@ void cycle (Counter ab)
     } while (op != 'x');
 }
 
+
 int main()
 {
     SetConsoleCP(1251);
@@ -64,12 +65,12 @@ int main()
 
     std::string p;
 
-    std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет: ";
+    std::cout << "Р’С‹ С…РѕС‚РёС‚Рµ СѓРєР°Р·Р°С‚СЊ РЅР°С‡Р°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‡С‘С‚С‡РёРєР°? Р’РІРµРґРёС‚Рµ РґР° РёР»Рё РЅРµС‚: ";
     std::cin >> p;
-    if (p == "да" || p == "ДА" || p == "Да" || p == "дА")
+    if (p == "РґР°" || p == "Р”Рђ" || p == "Р”Р°" || p == "РґРђ")
     {
         int number = 0;
-        std::cout << "Введите начальное значение счётчика: ";
+        std::cout << "Р’РІРµРґРёС‚Рµ РЅР°С‡Р°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‡С‘С‚С‡РёРєР°: ";
         std::cin >> number;
         Counter hip(number);
         cycle(hip);
